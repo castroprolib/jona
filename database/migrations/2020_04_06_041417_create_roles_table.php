@@ -13,9 +13,12 @@ class CreateRolesTable extends Migration
      */
     public function up()
     {
+        // estar pendiente con la restriccion unique al referenciar
+        
         Schema::create('roles', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('role')->unique();
+            // $table->string('role')->unique();
+            $table->string('role');
             $table->timestamps();
         });
     }

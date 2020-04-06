@@ -21,9 +21,9 @@ class StatesTableSeeder extends Seeder
     	// 	'country_id' => 3    		
     	// ]);
 
-    	// DB::table('states')->insert([
-    	// 	'state' => 'distrito capital',
-    	// 	'country_id' => 3    		
-    	// ]);
+    	DB::table('states')->insert([
+    		'state' => 'distrito capital',
+    		'country_id' => 3    		
+    	]);
     }
 }
