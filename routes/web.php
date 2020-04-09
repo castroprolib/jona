@@ -15,14 +15,27 @@
 //     return view('welcome');
 // });
 
-Auth::routes();
+/*
+Comandos frecuentes, para no perder el tiempo recordandolos
+
+php artisan make:controller UserController --resource
+
+php artisan make:model Flight -m
+
+php artisan make:migration create_users_table --create=users
+
+composer require "laravelcollective/html":"^5.8.0"
+
+*/
+
+ Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
 
 
-Route::get('/', 'Auth\LoginController@showLoginForm');
+ Route::get('/', 'Auth\LoginController@showLoginForm');
 
 
 // Route::get('/', 'Auth\LoginController@showLoginForm')->name('login');
 
-Route::get('/dashboard', 'DashboardController@index');
+ Route::get('/dashboard', 'DashboardController@index');
