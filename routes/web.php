@@ -39,3 +39,6 @@ composer require "laravelcollective/html":"^5.8.0"
 // Route::get('/', 'Auth\LoginController@showLoginForm')->name('login');
 
  Route::get('/dashboard', 'DashboardController@index');
+
+
+ Route::resource('user', 'UserController');
