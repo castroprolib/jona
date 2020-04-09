@@ -15,7 +15,18 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+        // return 'test1';       
+
+        $users = User::all();
+        return view('users.index')->with('users', $users);
+
+        //laravel trae por defecto como json, Content-Type: application/json
+
+        // return gettype($users);
+
+        // return $users;
+
+        
     }
 
     /**
@@ -25,7 +36,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        return 'test2';
     }
 
     /**
