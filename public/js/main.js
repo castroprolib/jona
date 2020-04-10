@@ -1,44 +1,42 @@
 // alert();
 
-console.log(BASE_URL);
+// console.log(BASE_URL);
 
 // alert(BASE_URL);
 
 // cargo los countrys con ajax
-// $.ajax({
-//   url: BASE_URL+'api/getcountrys',   
-//   dataType: 'json'    
-// })
-// .done(function(result) {
+$.ajax({
+  url: BASE_URL+'/countrys',   
+  dataType: 'json'    
+})
+.done(function(result) {
 
-//  console.log(result); 
+ // console.log(result); 
 
-//  // $.each(result, function(index, val) {
+ $.each(result, function(index, val) {
 
-//  //    // console.log(val);
-//  //    $("#country").append('<option value="'+ val.id_country + '">' + val.country + '</option>')
-//  //   // $("#country").append('<option>' + val.country + '</option>')
+    // console.log(val);
+    $("#country").append('<option value="'+ val.id + '">' + val.country + '</option>')  
 
-//  // });
-// });
+ });
+});
 
 
 // cargo los states con ajax
-// $.ajax({
-//   url: BASE_URL+'api/getstates',   
-//   dataType: 'json'    
-// })
-// .done(function(result) {
+$.ajax({
+  url: BASE_URL+'/states',   
+  dataType: 'json'    
+})
+.done(function(result) {
 
-//  // console.log(result); 
+ // console.log(result); 
 
-//  $.each(result, function(index, val) {
+ $.each(result, function(index, val) {
 
-//    $("#state").append('<option value="'+ val.id_state + '">' + val.state + '</option>')
-//    // $("#state").append('<option>' + val.state + '</option>')
+   $("#state").append('<option value="'+ val.id + '">' + val.state + '</option>') 
 
-//  });
-// });
+ });
+});
 
 
 // cargo los roles con ajax

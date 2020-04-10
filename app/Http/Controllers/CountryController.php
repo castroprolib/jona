@@ -15,12 +15,12 @@ class CountryController extends Controller
 	public function index()
 	{           
 
-		// $countrys = Country::all();
+		$countrys = Country::all();
 
 		// $countrys = State::find(1);
 
 		// con el metodo with() relaciono las tablas de una vez
-		$countrys = Country::with('state')->get();
+		// $countrys = Country::with('state')->get();
 
 
 		// da lo mismo traernos la data de un modelo o otro relacionados

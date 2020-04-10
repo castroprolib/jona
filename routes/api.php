@@ -22,4 +22,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
  para poder usar estas rutas en providers/RouteServiceProvider
  eliminar el prefix api en mapApiRoutes
  */
-Route::get('/country', 'CountryController@index');
+Route::get('/countrys', 'CountryController@index');
+
+Route::get('/states', 'StateController@index');
