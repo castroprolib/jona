@@ -39,19 +39,3 @@ $.ajax({
 });
 
 
-// cargo los roles con ajax
-// $.ajax({
-//   url: BASE_URL+'api/getroles',   
-//   dataType: 'json'    
-// })
-// .done(function(result) {
-
-//  // console.log(result); 
-
-//  $.each(result, function(index, val) {
-
-//    $("#role").append('<option value="'+ val.id_role + '">' + val.role + '</option>')
-//    // $("#role").append('<option>' + val.role + '</option>')  
-
-//  });
-// });
