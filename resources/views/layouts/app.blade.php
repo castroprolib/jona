@@ -12,7 +12,7 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
-    <script src="{{ asset('js/main.js') }}" defer></script>
+   {{--  <script src="{{ asset('js/main.js') }}" defer></script> --}}
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -20,6 +20,23 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+
+
+<!--  variables para poder usarlas en los js -->
+<script defer>
+
+
+  // colocarlo entre comillas simples, si no dice no definido
+  var BASE_URL = '{{ url('/') }}';
+
+   // var BASE_URL = 1;
+
+</script>
+
+ <script src="{{ asset('js/main.js') }}" defer></script>
+
+
 </head>
 <body>
 
