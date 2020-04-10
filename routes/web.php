@@ -46,4 +46,4 @@ composer require "laravelcollective/html":"^5.8.0"
 
  Route::resource('users', 'UserController');
 
- Route::get('/country', 'CountryController@index');
+ 

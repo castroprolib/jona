@@ -16,3 +16,10 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+/*
+ para poder usar estas rutas en providers/RouteServiceProvider
+ eliminar el prefix api en mapApiRoutes
+ */
+Route::get('/country', 'CountryController@index');

@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Country;
 
-use App\State;
+// use App\State;
 
 class CountryController extends Controller
 {
