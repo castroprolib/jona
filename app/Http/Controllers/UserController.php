@@ -23,6 +23,7 @@ class UserController extends Controller
 
         $users = User::with('role')
         ->with('country')
+        ->with('state')
         ->get();
 
         // print_r($users);

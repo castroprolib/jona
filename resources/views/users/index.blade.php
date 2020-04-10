@@ -4,16 +4,26 @@
 
 @section('content')
 
-<br>
-<br>
-<br>
-<br>
 
 
-<div class="offset-2 col-8">
+<div class="offset-2 col-10">
 
-	<h1 class="text-center">Users</h1>
+	<br>
+	<br>
+
+	<div class="col-6 bg-primary">
+
+		<h1 class="text-white">Users</h1>
+
+	</div>
+
+	<div class="col-6">
+
+		<p class="text-info">Usuarios registrados en la plataforma</p>
+
+	</div>
 	<hr>
+
 
 	@if(count($users) > 0)
 
@@ -28,6 +38,7 @@
 				<th>Email</th>
 				<th>Role</th>
 				<th>Country</th>
+				<th>State</th>
 				<th>Created_at</th>
 				<th>Actions</th>
 			</tr>
@@ -39,6 +50,7 @@
 				<td>{{$user->email}}</td>
 				<td>{{$user->role->role}}</td>
 				<td>{{$user->country->country}}</td>
+				<td>{{$user->state->state}}</td>
 				<td>{{$user->created_at}}</td>
 				<td>
 					<a href="{{$user->id}}" class="btn btn-primary">View</a>

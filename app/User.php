@@ -47,4 +47,8 @@ class User extends Authenticatable
      public function country(){
       return $this->belongsTo('App\Country');
     }
+
+     public function state(){
+      return $this->belongsTo('App\State');
+    }
 }
