@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\User;
 
+
+
 class UserController extends Controller
 {
     /**
@@ -17,8 +19,19 @@ class UserController extends Controller
     {
         // return 'test1';       
 
-        $users = User::all();
-        return view('users.index')->with('users', $users);
+        // $users = User::all();
+
+        $users = User::with('role')
+        ->with('country')
+        ->get();
+
+        // print_r($users);
+
+        return $users;
+
+        // return view('users.index')->with('users', $users);
+
+
 
         //laravel trae por defecto como json, Content-Type: application/json
 
