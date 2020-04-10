@@ -24,6 +24,9 @@ php artisan make:model Flight -m
 
 php artisan make:migration create_users_table --create=users
 
+//Cuando queremos agregar nueva columna a tabla existente//
+php artisan make:migration add_state_id_to_users
+
 composer require "laravelcollective/html":"^5.8.0"
 
 */
@@ -43,4 +46,4 @@ composer require "laravelcollective/html":"^5.8.0"
 
  Route::resource('user', 'UserController');
 
-  Route::get('/country', 'CountryController@index');
+ Route::get('/country', 'CountryController@index');
