@@ -28,7 +28,7 @@
 
 
   // colocarlo entre comillas simples, si no dice no definido
-  var BASE_URL = '{{ url('/') }}';
+  const BASE_URL = '{{ url('/') }}';
 
    // var BASE_URL = 1;
 
