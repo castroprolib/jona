@@ -27,9 +27,9 @@ class UserController extends Controller
 
         // print_r($users);
 
-        return $users;
+        // return $users;
 
-        // return view('users.index')->with('users', $users);
+        return view('users.index')->with('users', $users);
 
 
 

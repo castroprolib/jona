@@ -22,6 +22,8 @@ class CountryController extends Controller
 		// con el metodo with() relaciono las tablas de una vez
 		$countrys = Country::with('state')->get();
 
+
+		// da lo mismo traernos la data de un modelo o otro relacionados
 		// $countrys = State::with('country')->get();
 
 

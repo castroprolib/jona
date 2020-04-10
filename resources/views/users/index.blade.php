@@ -26,6 +26,8 @@
 				<th>#</th>
 				<th>Name</th>
 				<th>Email</th>
+				<th>Role</th>
+				<th>Country</th>
 				<th>Created_at</th>
 				<th>Actions</th>
 			</tr>
@@ -35,6 +37,8 @@
 				<td>{{$user->id}}</td>
 				<td>{{$user->name}}</td>
 				<td>{{$user->email}}</td>
+				<td>{{$user->role->role}}</td>
+				<td>{{$user->country->country}}</td>
 				<td>{{$user->created_at}}</td>
 				<td>
 					<a href="{{$user->id}}" class="btn btn-primary">View</a>
